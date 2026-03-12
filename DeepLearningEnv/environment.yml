@@ -1,0 +1,23 @@
+# environment.yml
+
+name: pytorch_cpu # Conda 环境的名称
+
+channels:
+  - pytorch      # PyTorch 官方渠道，优先级最高
+  - conda-forge  # 社区维护的渠道，包很全
+  - defaults     # Conda 默认渠道
+
+dependencies:
+  # 核心依赖
+  - python=3.10
+  - jupyterlab
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+
+  # PyTorch 库 (CPU 版本)
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cpuonly      # <--- 这是关键！它告诉 Conda 从 pytorch channel 获取一个没有 CUDA 依赖的版本。

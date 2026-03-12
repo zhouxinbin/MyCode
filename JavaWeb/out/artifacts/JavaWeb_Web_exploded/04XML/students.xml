@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<students> 
-  <student id="03"> 
-    <name>宋江</name>  
-    <gender>男</gender>  
-    <age>61</age> 
-  </student> 
-</students>

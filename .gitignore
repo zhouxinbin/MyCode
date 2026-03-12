@@ -1,0 +1,33 @@
+# Mac 系统文件
+.DS_Store
+*/.DS_Store
+
+# JetBrains IDE (IntelliJ, PyCharm, etc.)
+.idea/
+*.iml
+out/
+gen/
+.idea_modules/
+
+# Java 编译出的 class 文件
+*.class
+
+# JavaWeb 编译输出和构建产物
+artifacts/
+target/
+
+# 数据库/环境配置文件（可选，如果你想保护隐私）
+.env
+
+# 忽略所有模型权重文件
+*.pth
+*.h5
+*.weights
+# 忽略数据集压缩包和数据文件夹
+*.tar.gz
+*.zip
+*.7z
+data/
+# 忽略 Python 缓存
+__pycache__/
+.ipynb_checkpoints/
