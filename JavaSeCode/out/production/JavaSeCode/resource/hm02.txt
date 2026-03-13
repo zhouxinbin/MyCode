@@ -1,8 +1,0 @@
-JPanel buttonPanel = new JPanel();
-JButton addButton = createStyledButton("添加");
-addButton.addActionListener(e -> addNewContract());
-buttonPanel.add(addButton);
-JButton deleteButton = createStyledButton("删除");
-deleteButton.addActionListener(e -> deleteSelectedContract());
-buttonPanel.add(deleteButton);
-JButton updateButton = createStyledButton("修改");

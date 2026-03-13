@@ -1,0 +1,58 @@
+# ======= 操作系统垃圾 =======
+.DS_Store
+Thumbs.db
+
+# ======= IDE 与 编辑器 =======
+.idea/
+*.iml
+.vscode/
+.settings/
+.project/
+.classpath
+*.layout
+*.dep
+Makefile.win
+
+# ======= C / C++ 编译产物 (AlgoExercise, CPP上机, CG上机) =======
+*.exe
+*.o
+*.obj
+*.ilk
+*.pdb
+*.exp
+*.lib
+*.dll
+*.res
+*.idb
+*.ncb
+*.opt
+*.plg
+*.aps
+*.user
+Debug/
+Release/
+ipch/
+.vs/
+build/
+
+# ======= Java 编译产物 (JavaSeCode, JavaWeb, VIPMS) =======
+*.class
+out/
+bin/
+target/
+# 这里的 artifacts 是 IDEA 生成的部署包，建议忽略
+artifacts/
+# 如果不想提交第三方 jar 包（它们很大），可以取消下面行的注释
+# lib/*.jar
+
+# ======= 数据库文件 (SQLServerData) =======
+# 注意：.mdf 和 .ldf 是数据库运行时的物理文件，通常不建议直接存入 Git
+# 建议只存 .sql 脚本
+*.mdf
+*.ldf
+
+# ======= 临时文件与日志 =======
+*.log
+tempCodeRunnerFile.cpp
+tempCodeRunnerFile.exe
+tempCodeRunnerFile.java
