@@ -1,0 +1,17 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  jupyterlab:
+    build: .
+    image: deep_learning:latest  # <--- 添加这一行
+    container_name: deep_learning_container
+    ports:
+      # 将你电脑的 8888 端口映射到容器的 8888 端口
+      - "8888:8888"
+    volumes:
+      # 将本地的 notebooks 文件夹同步到容器，以便保存你的工作
+      - ./notebooks:/workspace/notebooks
+      - ./data:/workspace/data
+    command: conda run -n pytorch_cpu jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --LabApp.token=''

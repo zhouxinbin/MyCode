@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象解构</title>
+    <script type="text/javascript">
+        let monster = {name: '牛魔王', age: 800};
+        console.log(monster.name, " ", monster.age);
+        // 属性名 与 对象属性名一致
+        // 顺序无所谓
+        let {name, age} = monster;
+        console.log("name = ",name, " age = ", age);
+
+        // 方法使用对象解构
+        function f1({name, age}) {
+            console.log("f1-name = ",name, " f1-age = ", age);
+        }
+        f1(monster);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>箭头函数</title>
+    <script type="text/javascript">
+        let f1 = function (n) {
+            return n * 2;
+        }
+        console.log(f1(2));
+
+        let f2 = (n) => {
+            return n * 2;
+        }
+        console.log(f2(2));
+
+        function hi(f4) {
+          console.log(f4(900));
+        }
+        hi(n => {
+            return n + 100;
+        });
+        hi(n => {
+            return n - 100;
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

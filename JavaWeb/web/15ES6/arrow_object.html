@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        let monster = {
+            name: "红孩儿",
+            skill: "sss"
+        };
+        // 传统方式调用对象的属性
+        function f1(monster) {
+            console.log("skill=", monster.skill);
+        }
+        f1(monster);
+
+        // 箭头函数，形参为对象，自动解构对象的 skill 赋值给 skill
+        let f2 = ({skill, name}) => {
+            console.log("skill=", skill);
+            console.log("name=", name);
+        }
+        f2(monster);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
