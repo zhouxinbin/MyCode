@@ -1,33 +1,101 @@
-# Mac 系统文件
+# ==================================
+# 1. 操作系统与 IDE 配置文件
+# ==================================
+# macOS
 .DS_Store
-*/.DS_Store
+.AppleDouble
+.LSOverride
 
-# JetBrains IDE (IntelliJ, PyCharm, etc.)
+# IntelliJ IDEA (Java)
 .idea/
 *.iml
-out/
-gen/
-.idea_modules/
 
-# Java 编译出的 class 文件
+# VS Code
+.vscode/
+# VS Code Code Runner 插件生成的临时文件
+tempCodeRunnerFile.c
+tempCodeRunnerFile.cpp
+tempCodeRunnerFile.exe
+
+# Dev-C++ 
+*.layout
+*.dev
+Makefile.win
+
+
+# ==================================
+# 2. C / C++ 编译产物
+# ==================================
+*.exe
+*.o
+*.out
+*.app
+build/
+
+# VC++ 6.0 (CG上机 目录)
+Debug/
+Release/
+*.ncb
+*.opt
+*.plg
+*.aps
+*.ilk
+*.idb
+*.pch
+*.pdb
+*.res
+
+
+# ==================================
+# 3. Java 编译产物
+# ==================================
 *.class
-
-# JavaWeb 编译输出和构建产物
-artifacts/
+# IDEA 默认输出目录
+out/
+# Maven 默认输出目录 (MyTomcat)
 target/
+# Web 项目编译的 class 文件存放地
+**/WEB-INF/classes/
 
-# 数据库/环境配置文件（可选，如果你想保护隐私）
-.env
 
-# 忽略所有模型权重文件
-*.pth
-*.h5
-*.weights
-# 忽略数据集压缩包和数据文件夹
-*.tar.gz
-*.zip
-*.7z
-data/
-# 忽略 Python 缓存
+# ==================================
+# 4. Python & 深度学习 (PyTorch)
+# ==================================
 __pycache__/
-.ipynb_checkpoints/
+*.py[cod]
+*$py.class
+
+# PyTorch 模型权重文件 (非常大，不建议提交)
+*.pth
+*.pt
+*.ckpt
+
+# TensorBoard 日志文件
+logs/
+runs/
+events.out.tfevents.*
+
+# 深度学习数据集 (千万不要提交数据集，会导致仓库撑爆)
+pytorch_learning/dataset/
+pytorch_learning/test_data/
+
+
+# ==================================
+# 5. 数据库物理文件与备份
+# ==================================
+# SQL Server 物理文件 (SQLServerData 目录)
+*.mdf
+*.ldf
+*.ndf
+
+# 数据库备份文件
+*.bak
+*.sql.bak
+
+
+# ==================================
+# 6. 其他临时文件
+# ==================================
+*.log
+*.tmp
+*.temp
